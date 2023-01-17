@@ -28,9 +28,6 @@
         }
         public decimal FunctionForSerchingSecondDerivative(decimal x, decimal h, Func<double, double> func)
         {
-
-
-
             return ((decimal)func((double)(x+h))-2*(decimal)func((double)x)+(decimal)func((double)(x - h))) / (h*h);
         }
 
