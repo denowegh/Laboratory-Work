@@ -8,7 +8,8 @@ namespace Laboratory_Work.Classes.FirstlaboratoryWork
         {
 
             return (double)(1.5m*(DecimalEx.Exp(DecimalEx.Pow((decimal)x,2m))+DecimalEx.Exp(DecimalEx.Pow(-1*(decimal)x, 2m))));
-        } 
+        }
+        
 
     }
 }
