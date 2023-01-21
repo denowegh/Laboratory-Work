@@ -14,6 +14,7 @@ namespace Laboratory_Work.Controllers
         [HttpGet]
         public string Get(double x)
         {
+            //Створення і заповнення обєкта відповіді 
             const decimal X0 = 0.4216m;
 
             var Resp = new LaboratoryWorkRespounse(X0, 0.0217m);

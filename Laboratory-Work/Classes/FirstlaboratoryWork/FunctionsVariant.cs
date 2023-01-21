@@ -3,7 +3,7 @@ namespace Laboratory_Work.Classes.FirstlaboratoryWork
 {
     public class FunctionsVariant
     {
-
+        //Функії по варіантам 
         public static double VariantSix(double x)
         {
 

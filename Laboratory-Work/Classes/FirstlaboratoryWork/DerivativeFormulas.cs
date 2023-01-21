@@ -1,7 +1,8 @@
 ﻿namespace Laboratory_Work.Classes.FirstlaboratoryWork
-{
+{//Формули диференціювання 
     public class DerivativeFormulas
     {
+        //П'яти точкова формула А
         public static decimal fivePointSchemeForCalculatingTheCostA(decimal x,decimal h, Func<double,double> func)
         {
             
@@ -14,6 +15,7 @@
                 6m * (decimal)func((double)(x + h*2)) +
                 (decimal)func((double)(x + h * 3)))/(12*h);
         }
+        //П'яти точкова формула В
         public static decimal fivePointSchemeForCalculatingTheCostB(decimal x, decimal h, Func<double, double> func)
         {
 
@@ -26,7 +28,7 @@
                  16m * (decimal)func((double)(x + h * 3)) -
                  3m* (decimal)func((double)(x + h * 4))) / (12 * h);
         }
-
+        //Формула знаходження другої похідної 
         public static decimal FunctionForSerchingSecondDerivative(decimal x, decimal h, Func<double, double> func)
         {
             return ((decimal)func((double)(x+h))-2*(decimal)func((double)x)+(decimal)func((double)(x - h))) / (h*h);

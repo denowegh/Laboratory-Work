@@ -5,7 +5,7 @@ namespace Laboratory_Work.Classes.FirstlaboratoryWork
 {
     public class LaboratoryWorkRespounse
     {
-        
+       //Обєкт відповіді яку я передаю на Фронтенд в форматі JSON 
         private const int Points = 6;
 		private decimal[] xArray = new decimal[Points];
 
