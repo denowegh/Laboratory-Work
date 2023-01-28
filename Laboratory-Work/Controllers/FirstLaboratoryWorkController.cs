@@ -12,7 +12,7 @@ namespace Laboratory_Work.Controllers
         
 
         [HttpGet]
-        public string Get(double x)
+        public string Get()
         {
             //Створення і заповнення обєкта відповіді 
             const decimal X0 = 0.4216m;
@@ -33,7 +33,6 @@ namespace Laboratory_Work.Controllers
             string json = JsonConvert
                 .SerializeObject(Resp);
 
-            var person2 = JsonConvert.DeserializeObject<LaboratoryWorkRespounse>(json);
 
 
             
