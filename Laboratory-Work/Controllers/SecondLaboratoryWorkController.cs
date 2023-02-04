@@ -12,11 +12,9 @@ namespace Laboratory_Work.Controllers
     {
 
         [HttpGet]
-        public string Get(double x)
+        public string Get(decimal A, decimal B, int N)
         {
-            const int N = 10;
-            const decimal A = 0.276m;
-            const decimal B = 1.057m;
+            
             Func<decimal,decimal> func = FunctionsVariant.VariantSix;
 
             decimal S = NumericalIntegration.methodSimpson(func, A, B, N);

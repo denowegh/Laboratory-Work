@@ -11,6 +11,7 @@ namespace Laboratory_Work.Classes.SecondLaboratoryWork
         {
             return a + (h * i);
         }
+
         public static decimal methodTrapezium(Func<decimal,decimal> func , decimal a,decimal b,int n)
         {
             decimal h = (b - a )/ n;
@@ -24,6 +25,7 @@ namespace Laboratory_Work.Classes.SecondLaboratoryWork
             
             return h*(S0+Sn);
         }
+
 
 
         public static decimal methodSimpson(Func<decimal, decimal> func, decimal a, decimal b, int n)
@@ -50,6 +52,7 @@ namespace Laboratory_Work.Classes.SecondLaboratoryWork
             return (h/3)*(Item0+ItemN+2*(Even)+4*(NoEven));
 
         }
+
 
         public static decimal Comparison(decimal methodSimpson,decimal methodTrapezium)
         {
