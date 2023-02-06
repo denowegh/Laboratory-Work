@@ -9,7 +9,7 @@ namespace Laboratory_Work.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class ThirdSecondLaboratoryWorkController : ControllerBase
+    public class ThirdLaboratoryWorkController : ControllerBase
     {
         [HttpGet]
         public string Get(decimal a,decimal b ,decimal n,int sampleSize)
