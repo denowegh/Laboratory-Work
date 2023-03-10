@@ -3,11 +3,11 @@
     public static class Methods
     {
 
-       public static LaboratoryWorkRespounse MethodEller(Func<decimal, decimal, decimal> func, decimal a, decimal b, decimal x0, decimal y0, int n)
+       public static LaboratoryWorkRespounse MethodEller(Func<decimal, decimal, decimal> func, decimal a, decimal b, decimal x0, decimal y0, decimal h, int n)
         {
             decimal[] listPointsX = new decimal[n + 1];
             decimal[] listPointsY = new decimal[n + 1];
-            decimal h = (b - x0) / n;
+            
             listPointsX[0] = x0;
             listPointsY[0] = y0;
             decimal YNew;
