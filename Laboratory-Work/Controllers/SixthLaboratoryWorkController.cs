@@ -8,11 +8,11 @@ namespace Laboratory_Work.Controllers
     public class SixthLaboratoryWorkController : ControllerBase
     {
         [HttpGet]
-        public string Get(decimal a, decimal b, decimal x0, decimal y0, int n)
+        public string Get(decimal a, decimal b, decimal x0, decimal y0, decimal h,int n)
         {
             var func = new Func<decimal, decimal, decimal>(FunctionVariant.SixthVariant);
             
-            LaboratoryWorkRespounse respounse = Methods.MethodEller(func,a, b, x0, y0, n);
+            LaboratoryWorkRespounse respounse = Methods.MethodEller(func,a, b, x0, y0, h,n);
             string ret = JsonConvert.SerializeObject(respounse);
             Console.WriteLine(respounse.ToString());
             return ret;
