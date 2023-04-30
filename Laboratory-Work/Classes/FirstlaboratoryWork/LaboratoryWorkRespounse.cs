@@ -111,9 +111,9 @@ namespace Laboratory_Work.Classes.FirstlaboratoryWork
 
                 decimal step = (h * i);
                 XArray[(int)i + 1] = x + step;
-                YArray = SuportFunc.DataFunction(func, XArray).ToArray();
             }
 
+            YArray = SuportFunc.DataFunction(func, XArray).ToArray();
 
         }
 

@@ -3,7 +3,8 @@
     public static class Methods
     {
 
-        public static LaboratoryWorkRespounse MethodRungeKutti(Func<decimal, decimal, decimal> func, decimal a, decimal b, decimal x0, decimal y0, decimal h, int n)
+        public static LaboratoryWorkRespounse MethodRungeKutti(Func<decimal, decimal, decimal> func, 
+            decimal a, decimal b, decimal x0, decimal y0, decimal h, int n)
         {
             decimal[] listPointsX = new decimal[n + 1];
             decimal[] listPointsY = new decimal[n + 1];
